@@ -7,3 +7,12 @@
 :root {
   font-family: "Inter", sans-serif;
 }
+
+/* .curved-background {
+  background-color: #4b0082;
+  width: 100%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: ;
+  clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
+  position: relative;
+} */

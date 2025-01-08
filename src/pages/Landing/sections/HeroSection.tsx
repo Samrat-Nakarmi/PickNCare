@@ -1,4 +1,3 @@
-import React from "react";
 import TabSwitch from "../components/TabSwitch";
 
 const HeroSection = () => {

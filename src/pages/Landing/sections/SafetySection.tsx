@@ -1,13 +1,12 @@
-import React from "react";
 import SafetyCard from "../components/SafetyCard";
 import SafetyIcon from "@/components/icons/SafetyIcon";
+import IdentityIcon from "@/components/icons/IdentityIcon";
+import GroupIcon from "@/components/icons/GroupIcon";
 
-type Props = {};
-
-const SafetySection = (props: Props) => {
+const SafetySection = () => {
   return (
     <section className="w-[85%] my-12 mx-auto">
-      <div className="w-full grid grid-cols-2 gap-10">
+      <div className="w-full grid grid-cols-2 gap-10 items-center">
         <div>
           <h2 className="font-bold text-4xl mb-4">
             Worried About <span className="text-yellow">Safety?</span>
@@ -21,7 +20,23 @@ const SafetySection = (props: Props) => {
               svg={<SafetyIcon />}
               description="Caregivers are thoroughly background checked"
             />
+            <SafetyCard
+              svg={<IdentityIcon />}
+              description="Verified IDs and transparent reviews"
+            />
+            <SafetyCard
+              svg={<GroupIcon />}
+              description="Dedicated security and support teams"
+            />
           </div>
+        </div>
+        <div className="relative">
+          <img
+            src="/images/safety_section_image.jpg"
+            alt=""
+            className="absolute w-[550px] right-0 -translate-x-4 translate-y-4 z-10"
+          />
+          <div className="bg-purple w-[550px] h-[366.67px] ml-auto"></div>
         </div>
       </div>
     </section>

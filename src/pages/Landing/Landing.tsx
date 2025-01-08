@@ -1,17 +1,24 @@
 import Navbar from "@/components/Navbar";
-import React from "react";
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
 import SafetySection from "./sections/SafetySection";
+import WhySection from "./sections/WhySection";
+import TestimonialSection from "./sections/TestimonialSection";
+import PreviewSection from "./sections/PreviewSection";
+import Footer from "@/components/Footer";
 
 const Landing = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <HeroSection />
       <AboutSection />
       <SafetySection />
-    </div>
+      <WhySection />
+      <TestimonialSection />
+      <PreviewSection />
+      <Footer />
+    </>
   );
 };
 

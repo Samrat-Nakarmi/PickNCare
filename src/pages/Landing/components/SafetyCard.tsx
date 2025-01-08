@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 
 type Props = {
   svg: ReactElement;
@@ -7,7 +7,7 @@ type Props = {
 
 const SafetyCard = (props: Props) => {
   return (
-    <div className="flex border-2 border-purple rounded-[10px] py-3 px-4 text-brown items-center">
+    <div className="w-[90%] flex border-2 gap-6 border-purple rounded-[10px] py-3 px-4 text-brown items-center">
       <div className="w-fit">{props.svg}</div>
       <div className="w-full">
         <p>{props.description}</p>
